@@ -1,27 +1,77 @@
 "use client"
 
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
+
+  const whatAmI = [
+    "a passionate developer",
+    "a backend specialist",
+    "a system integrator", 
+    "a DevOps enthusiast",
+    "a problem solver",
+    "a team player",
+    "a quick learner",
+    "a clean code advocate",
+    "a performance optimizer",
+    "an architecture enthusiast"
+  ]
+
+  // Find longest string to set minimum width
+  const maxLength = Math.max(...whatAmI.map(text => text.length));
+
+  const [iAm, setIAm] = useState("a passionate developer");
+
+  useEffect(() =>{
+    const interval = setInterval(() => {
+        const currentIndex = whatAmI.indexOf(iAm);
+        const nextIndex = (currentIndex + 1) % whatAmI.length;
+        setIAm(whatAmI[nextIndex]);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  })
+
+
   return (
     <>
       <div>
         <Navbar></Navbar>
         <main>
-          <div className="pl-8 mx-40">
+          <div className="pl-0 sd:pl-8 lg:mx-20">
             <div className="min-h-screen flex items-center">
               <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-8 px-4">
-                <div className="w-full md:w-1/2 animate-slide-in-left">
+                <div className="w-full lg:w-1/2 animate-slide-in-left">
                   <div className="space-y-4">
                     <h1 className="text-6xl md:text-8xl font-bold text-white">Hi, I'm <span className="pacifico-regular">Tim</span></h1>
-                    <p className="text-xl text-gray-300">
-                      I'm a passionate developer with a background in application development and extensive experience. My strengths lie in backend development, but I also have a keen interest in frontend work. Additionally, I have experience in DevOps and a solid understanding of system integration. I'm always eager to expand my knowledge and take on new challenges.
+                    <p className="text-3xl text-red-900 pacifico-regular opacity-50 animate-[fadeIn_1s_ease-out_forwards]">{iAm}</p>
+                    <p className="text-xl text-white"> with a background in application development and extensive experience.
+                      My strengths lie in backend development, but I also have a keen interest in frontend work.
+                      Additionally, I have experience in DevOps and a solid understanding of system integration.
+                      I'm always eager to expand my knowledge and take on new challenges.
                     </p>
+                    <div className="">
+                      <div className="flex gap-6 mt-4">
+                        <a href="https://github.com/i3lackracer" target="_blank" className="group relative flex flex-col items-center">
+                          <i className="devicon-github-original text-4xl text-white transition-transform group-hover:scale-110"></i>
+                          <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tim-s%C3%BCllner/" target="_blank" className="group relative flex flex-col items-center">
+                          <i className="devicon-linkedin-plain text-4xl text-white transition-transform group-hover:scale-110"></i>
+                          <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">LinkedIn</span>
+                        </a>
+                        <a href="https://www.xing.com/profile/TimMartin_Suellner" target="_blank" className="group relative flex flex-col items-center">
+                          <img className="w-9 h-9 text-white transition-transform group-hover:scale-110 invert" src="xing.png"></img>
+                          <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Xing</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="w-full md:w-1/2 animate-slide-in-right">
+                <div className="w-full lg:w-1/2 animate-slide-in-right animate-bounce">
                   <div className="space-y-4">
-                    <img className="w-1/2 h-auto object-cover rounded-lg mx-auto" src="me.jpg" alt="Tim's profile picture"></img>
+                    <img className="md:w-1/2 h-auto object-cover rounded-lg mx-auto" src="me.jpg" alt="Tim's profile picture"></img>
                   </div>
                 </div>
               </div>
@@ -29,7 +79,7 @@ export default function Home() {
           </div>
 
           <div className="py-16 px-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Skills & Technologies </h2> 
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Skills & Technologies </h2>
 
             <div className="max-w-6xl mx-auto space-y-12">
               {/* Operating Systems */}

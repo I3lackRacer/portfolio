@@ -7,9 +7,9 @@ export default function Strengths() {
         <>
             <Navbar></Navbar>
             <main>
-                <div className="pl-8 mx-70 my-30">
+                <div className="md:pl-8 mx-5 md:mx-40 my-30">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-12">My Strengths</h1>
-                    
+
                     <div className="max-w-3xl space-y-8">
                         <div className="space-y-2">
                             <div className="flex justify-between items-center">
@@ -43,16 +43,6 @@ export default function Strengths() {
 
                         <div className="space-y-2">
                             <div className="flex justify-between items-center">
-                                <h3 className="text-xl text-white">Frontend Development</h3>
-                                <span className="text-white">75%</span>
-                            </div>
-                            <div className="h-4 bg-gray-700 rounded-full">
-                                <div className="h-full w-[75%] animate-[slideIn_1s_ease-out] delay-300 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
-                            </div>
-                        </div>
-
-                        <div className="space-y-2">
-                            <div className="flex justify-between items-center">
                                 <h3 className="text-xl text-white">Database Design</h3>
                                 <span className="text-white">85%</span>
                             </div>
@@ -63,23 +53,23 @@ export default function Strengths() {
 
                         <div className="space-y-2">
                             <div className="flex justify-between items-center">
-                                <h3 className="text-xl text-white">Cloud Services</h3>
-                                <span className="text-white">80%</span>
+                                <h3 className="text-xl text-white">Frontend Development</h3>
+                                <span className="text-white">75%</span>
                             </div>
                             <div className="h-4 bg-gray-700 rounded-full">
-                                <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] delay-500 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                <div className="h-full w-[75%] animate-[slideIn_1s_ease-out] delay-300 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="mt-12 text-gray-300">
-                        <p className="text-xl">
-                            These percentages represent my relative comfort and expertise level with each area. 
-                            Backend development and system integration are my core strengths, while I maintain 
-                            solid capabilities in DevOps, database design, and cloud services. Though frontend 
-                            development isn't my primary focus, I have a good working knowledge and continue 
-                            to improve in this area.
-                        </p>
+                        <div className="space-y-2">
+                            <div className="flex justify-between items-center">
+                                <h3 className="text-xl text-white">Cloud Services</h3>
+                                <span className="text-white">60%</span>
+                            </div>
+                            <div className="h-4 bg-gray-700 rounded-full">
+                                <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] delay-500 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <h2 className="text-4xl md:text-6xl font-bold text-white mt-20 mb-12">Tool Proficiency</h2>
@@ -121,10 +111,10 @@ export default function Strengths() {
                                             <i className="devicon-apple-original text-4xl"></i>
                                             <h3 className="text-xl text-white">macOS</h3>
                                         </div>
-                                        <span className="text-white">85%</span>
+                                        <span className="text-white">60%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -189,19 +179,6 @@ export default function Strengths() {
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-center">
                                         <div className="flex items-center gap-4">
-                                            <i className="devicon-javascript-plain colored text-4xl"></i>
-                                            <h3 className="text-xl text-white">JavaScript</h3>
-                                        </div>
-                                        <span className="text-white">85%</span>
-                                    </div>
-                                    <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
-                                    </div>
-                                </div>
-
-                                <div className="space-y-2">
-                                    <div className="flex justify-between items-center">
-                                        <div className="flex items-center gap-4">
                                             <i className="devicon-typescript-plain colored text-4xl"></i>
                                             <h3 className="text-xl text-white">TypeScript</h3>
                                         </div>
@@ -209,6 +186,19 @@ export default function Strengths() {
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
                                         <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                    </div>
+                                </div>
+
+                                <div className="space-y-2">
+                                    <div className="flex justify-between items-center">
+                                        <div className="flex items-center gap-4">
+                                            <i className="devicon-javascript-plain colored text-4xl"></i>
+                                            <h3 className="text-xl text-white">JavaScript</h3>
+                                        </div>
+                                        <span className="text-white">60%</span>
+                                    </div>
+                                    <div className="h-4 bg-gray-700 rounded-full">
+                                        <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -224,23 +214,10 @@ export default function Strengths() {
                                             <i className="devicon-spring-plain colored text-4xl"></i>
                                             <h3 className="text-xl text-white">Spring</h3>
                                         </div>
-                                        <span className="text-white">95%</span>
+                                        <span className="text-white">90%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
-                                    </div>
-                                </div>
-
-                                <div className="space-y-2">
-                                    <div className="flex justify-between items-center">
-                                        <div className="flex items-center gap-4">
-                                            <i className="devicon-react-original colored text-4xl"></i>
-                                            <h3 className="text-xl text-white">React</h3>
-                                        </div>
-                                        <span className="text-white">85%</span>
-                                    </div>
-                                    <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -254,6 +231,32 @@ export default function Strengths() {
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
                                         <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                    </div>
+                                </div>
+
+                                <div className="space-y-2">
+                                    <div className="flex justify-between items-center">
+                                        <div className="flex items-center gap-4">
+                                            <i className="devicon-react-original colored text-4xl"></i>
+                                            <h3 className="text-xl text-white">React</h3>
+                                        </div>
+                                        <span className="text-white">70%</span>
+                                    </div>
+                                    <div className="h-4 bg-gray-700 rounded-full">
+                                        <div className="h-full w-[70%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                    </div>
+                                </div>
+
+                                <div className="space-y-2">
+                                    <div className="flex justify-between items-center">
+                                        <div className="flex items-center gap-4">
+                                            <i className="devicon-vuejs-plain colored text-4xl"></i>
+                                            <h3 className="text-xl text-white">Vue</h3>
+                                        </div>
+                                        <span className="text-white">50%</span>
+                                    </div>
+                                    <div className="h-4 bg-gray-700 rounded-full">
+                                        <div className="h-full w-[50%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -282,10 +285,10 @@ export default function Strengths() {
                                             <i className="devicon-kubernetes-plain colored text-4xl"></i>
                                             <h3 className="text-xl text-white">Kubernetes</h3>
                                         </div>
-                                        <span className="text-white">85%</span>
+                                        <span className="text-white">65%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -295,10 +298,10 @@ export default function Strengths() {
                                             <i className="devicon-jenkins-plain colored text-4xl"></i>
                                             <h3 className="text-xl text-white">Jenkins</h3>
                                         </div>
-                                        <span className="text-white">85%</span>
+                                        <span className="text-white">65%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -324,8 +327,8 @@ export default function Strengths() {
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-center">
                                         <div className="flex items-center gap-4">
-                                            <i className="devicon-mysql-plain colored text-4xl"></i>
-                                            <h3 className="text-xl text-white">MySQL</h3>
+                                            <i className="devicon-mongodb-plain colored text-4xl"></i>
+                                            <h3 className="text-xl text-white">MongoDB</h3>
                                         </div>
                                         <span className="text-white">90%</span>
                                     </div>
@@ -337,13 +340,13 @@ export default function Strengths() {
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-center">
                                         <div className="flex items-center gap-4">
-                                            <i className="devicon-mongodb-plain colored text-4xl"></i>
-                                            <h3 className="text-xl text-white">MongoDB</h3>
+                                            <i className="devicon-mysql-plain colored text-4xl"></i>
+                                            <h3 className="text-xl text-white">MySQL</h3>
                                         </div>
-                                        <span className="text-white">85%</span>
+                                        <span className="text-white">80%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -385,14 +388,24 @@ export default function Strengths() {
                                             <i className="devicon-visualstudio-plain colored text-4xl"></i>
                                             <h3 className="text-xl text-white">Visual Studio</h3>
                                         </div>
-                                        <span className="text-white">85%</span>
+                                        <span className="text-white">65%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="mt-12 text-gray-300">
+                        <p className="text-xl">
+                            These percentages represent my relative comfort and expertise level with each area.
+                            Backend development and system integration are my core strengths, while I maintain
+                            solid capabilities in DevOps, database design, and cloud services. Though frontend
+                            development isn't my primary focus, I have a good working knowledge and continue
+                            to improve in this area. <span className="text-gray-700 text-sm">*These values are purely my own evaluation</span>
+                        </p>
                     </div>
                 </div>
             </main>
