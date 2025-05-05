@@ -1,103 +1,252 @@
-import Image from "next/image";
+"use client"
+
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <div>
+        <Navbar></Navbar>
+        <main>
+          <div className="pl-8 mx-40">
+            <div className="min-h-screen flex items-center">
+              <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-8 px-4">
+                <div className="w-full md:w-1/2 animate-slide-in-left">
+                  <div className="space-y-4">
+                    <h1 className="text-6xl md:text-8xl font-bold text-white">Hi, I'm <span className="pacifico-regular">Tim</span></h1>
+                    <p className="text-xl text-gray-300">
+                      I'm a passionate developer with a background in application development and extensive experience. My strengths lie in backend development, but I also have a keen interest in frontend work. Additionally, I have experience in DevOps and a solid understanding of system integration. I'm always eager to expand my knowledge and take on new challenges.
+                    </p>
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2 animate-slide-in-right">
+                  <div className="space-y-4">
+                    <img className="w-1/2 h-auto object-cover rounded-lg mx-auto" src="me.jpg" alt="Tim's profile picture"></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <div className="py-16 px-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Skills & Technologies </h2> 
+
+            <div className="max-w-6xl mx-auto space-y-12">
+              {/* Operating Systems */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Operating Systems</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.microsoft.com/windows', '_blank')}>
+                    <i className="devicon-windows11-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Windows</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.linux.org/', '_blank')}>
+                    <i className="devicon-linux-plain text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Linux</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.apple.com/macos', '_blank')}>
+                    <i className="devicon-apple-original text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">macOS</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Programming Languages */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Programming Languages</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.java.com', '_blank')}>
+                    <i className="devicon-java-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Java</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://dotnet.microsoft.com/languages/csharp', '_blank')}>
+                    <i className="devicon-csharp-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">C#</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.python.org', '_blank')}>
+                    <i className="devicon-python-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Python</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://golang.org', '_blank')}>
+                    <i className="devicon-go-original-wordmark colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Go</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript', '_blank')}>
+                    <i className="devicon-javascript-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">JavaScript</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.typescriptlang.org', '_blank')}>
+                    <i className="devicon-typescript-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">TypeScript</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://dart.dev', '_blank')}>
+                    <i className="devicon-dart-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Dart</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.php.net', '_blank')}>
+                    <i className="devicon-php-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">PHP</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://isocpp.org', '_blank')}>
+                    <i className="devicon-cplusplus-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">C++</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://en.cppreference.com/w/c', '_blank')}>
+                    <i className="devicon-c-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">C</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Frameworks & Libraries */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Frameworks & Libraries</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://angular.io', '_blank')}>
+                    <i className="devicon-angularjs-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Angular</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://reactjs.org', '_blank')}>
+                    <i className="devicon-react-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">React</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://vuejs.org', '_blank')}>
+                    <i className="devicon-vuejs-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Vue.js</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://spring.io', '_blank')}>
+                    <i className="devicon-spring-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Spring</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://expressjs.com', '_blank')}>
+                    <i className="devicon-express-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Express</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://nestjs.com', '_blank')}>
+                    <i className="devicon-nestjs-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">NestJS</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://flutter.dev', '_blank')}>
+                    <i className="devicon-flutter-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Flutter</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://tailwindcss.com', '_blank')}>
+                    <i className="devicon-tailwindcss-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Tailwind CSS</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://nodejs.org', '_blank')}>
+                    <i className="devicon-nodejs-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Node.js</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* DevOps & Cloud */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">DevOps & Cloud</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.docker.com', '_blank')}>
+                    <i className="devicon-docker-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Docker</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://kubernetes.io', '_blank')}>
+                    <i className="devicon-kubernetes-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Kubernetes</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://cloud.google.com', '_blank')}>
+                    <i className="devicon-googlecloud-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Google Cloud</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.nginx.com', '_blank')}>
+                    <i className="devicon-nginx-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Nginx</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://github.com', '_blank')}>
+                    <i className="devicon-github-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">GitHub</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://gitlab.com', '_blank')}>
+                    <i className="devicon-gitlab-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">GitLab</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.jenkins.io', '_blank')}>
+                    <i className="devicon-jenkins-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Jenkins</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://grafana.com', '_blank')}>
+                    <i className="devicon-grafana-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Grafana</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Databases */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Databases</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.mysql.com', '_blank')}>
+                    <i className="devicon-mysql-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">MySQL</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.postgresql.org', '_blank')}>
+                    <i className="devicon-postgresql-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">PostgreSQL</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.mongodb.com', '_blank')}>
+                    <i className="devicon-mongodb-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">MongoDB</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.sqlite.org', '_blank')}>
+                    <i className="devicon-sqlite-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">SQLite</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://mariadb.org', '_blank')}>
+                    <i className="devicon-mariadb-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">MariaDB</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* IDEs & Tools */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">IDEs & Tools</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://visualstudio.microsoft.com', '_blank')}>
+                    <i className="devicon-visualstudio-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Visual Studio</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.jetbrains.com/idea', '_blank')}>
+                    <i className="devicon-intellij-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">IntelliJ</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://code.visualstudio.com', '_blank')}>
+                    <i className="devicon-vscode-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">VS Code</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://gradle.org', '_blank')}>
+                    <i className="devicon-gradle-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Gradle</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://www.npmjs.com', '_blank')}>
+                    <i className="devicon-npm-original-wordmark colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">npm</span>
+                  </div>
+                  <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://yarnpkg.com', '_blank')}>
+                    <i className="devicon-yarn-plain colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200"></i>
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Yarn</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-xl text-gray-300">That's a lot of technologies! Want to know where my strengths lie? <a href="/strengths" className="text-blue-500 hover:text-blue-600 transition-colors underline">
+                Check out my strengths
+              </a></p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </>
   );
 }
