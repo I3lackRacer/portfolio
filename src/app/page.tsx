@@ -45,7 +45,7 @@ export default function Home() {
                 <div className="w-full lg:w-1/2 animate-slide-in-left">
                   <div className="space-y-4">
                     <h1 className="text-6xl md:text-8xl font-bold text-white">Hi, I'm <span className="pacifico-regular">Tim</span></h1>
-                    <p className="text-3xl text-red-900 pacifico-regular opacity-50 animate-[fadeIn_1s_ease-out_forwards]">{iAm}</p>
+                    <p className="text-3xl text-red-500 pacifico-regular opacity-50 animate-[fadeIn_1s_ease-out_forwards]">{iAm}</p>
                     <p className="text-xl text-white"> with a background in application development and extensive experience.
                       My strengths lie in backend development, but I also have a keen interest in frontend work.
                       Additionally, I have experience in DevOps and a solid understanding of system integration.
@@ -293,6 +293,139 @@ export default function Home() {
               <p className="text-xl text-gray-300">That's a lot of technologies! Want to know where my strengths lie? <a href="/strengths" className="text-blue-500 hover:text-blue-600 transition-colors underline">
                 Check out my strengths
               </a></p>
+            </div>
+          </div>
+
+          {/* Projects Section */}
+          <div className="py-16 px-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Featured Projects</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Project Card Example */}
+              <div className="bg-gray-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform">
+                <h3 className="text-xl font-bold text-white mb-2">Project Name</h3>
+                <p className="text-gray-300 mb-4">Brief description of the project and your role in it.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-blue-500 text-white px-2 py-1 rounded text-sm">React</span>
+                  <span className="bg-blue-500 text-white px-2 py-1 rounded text-sm">Node.js</span>
+                </div>
+                <div className="flex gap-4">
+                  <a href="#" className="text-blue-400 hover:text-blue-300">Demo</a>
+                  <a href="#" className="text-blue-400 hover:text-blue-300">GitHub</a>
+                </div>
+              </div>
+              {/* Add more project cards */}
+            </div>
+          </div>
+
+          {/* Experience Section */}
+          <div className="py-16 px-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Work Experience</h2>
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white">Software Developer (Working Student)</h3>
+                <p className="text-blue-400">Enercast GmbH, Kassel</p>
+                <p className="text-gray-400">10/2022 - 06/2024</p>
+                <ul className="list-disc list-inside text-gray-300 mt-2">
+                  <li>Spring Web API Development</li>
+                  <li>File parser development for data import/export</li>
+                  <li>Algorithm development for solar/wind plant data processing</li>
+                </ul>
+              </div>
+
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white">IT Support / SharePoint Integration (Working Student)</h3>
+                <p className="text-blue-400">Technoform Glass Insulation GmbH, Lohfelden</p>
+                <p className="text-gray-400">08/2021 - 07/2022</p>
+                <ul className="list-disc list-inside text-gray-300 mt-2">
+                  <li>SharePoint Administration and Training</li>
+                  <li>SharePoint Website Development</li>
+                  <li>Internal First Level IT Support</li>
+                </ul>
+              </div>
+
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white">Application Developer (Apprenticeship)</h3>
+                <p className="text-blue-400">fino create GmbH, Kassel</p>
+                <p className="text-gray-400">09/2018 - 07/2021</p>
+                <ul className="list-disc list-inside text-gray-300 mt-2">
+                  <li>Backend Development</li>
+                  <li>Microservices Development</li>
+                  <li>Service Monitoring</li>
+                  <li>Code Reviews</li>
+                  <li>Scrum Project Planning</li>
+                  <li>REST API Development</li>
+                </ul>
+              </div>
+
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white">IT Intern</h3>
+                <p className="text-blue-400">Technoform Bautec GmbH, Fuldabrück</p>
+                <p className="text-gray-400">09/2016 - 07/2017</p>
+                <ul className="list-disc list-inside text-gray-300 mt-2">
+                  <li>Operating System Installation</li>
+                  <li>User Training</li>
+                  <li>IT Asset Management</li>
+                  <li>Hardware Updates/Upgrades</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Education Section */}
+          <div className="py-16 px-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Education</h2>
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white">Bachelor in Computer Science</h3>
+                <p className="text-blue-400">Technische Hochschule Mittelhessen, Gießen</p>
+                <p className="text-gray-400">2021 - Present</p>
+              </div>
+
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white">IT Specialist for Application Development</h3>
+                <p className="text-blue-400">fino create GmbH</p>
+                <p className="text-gray-400">2018 - 2021</p>
+              </div>
+
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white">Advanced Technical College Entrance Qualification</h3>
+                <p className="text-blue-400">Max Eyth Schule, Kassel</p>
+                <p className="text-gray-400">2016 - 2018</p>
+                <p className="text-gray-300 mt-2">Information Technology (Grade: 2.1)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Section */}
+          <div className="py-16 px-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Get in Touch</h2>
+            <div className="max-w-2xl mx-auto">
+              <div className="flex flex-col items-center gap-4">
+                <a href="mailto:tim@suellner.de" className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
+                  Contact me via Email
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Information Section */}
+          <div className="py-16 px-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Additional Information</h2>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white mb-4">Languages</h3>
+                <ul className="text-gray-300">
+                  <li>German - Native</li>
+                  <li>English - B2</li>
+                </ul>
+              </div>
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h3 className="text-xl font-bold text-white mb-4">Other</h3>
+                <ul className="text-gray-300">
+                  <li>Driver's License Class B</li>
+                  <li>Volunteer IT Support for Seniors</li>
+                </ul>
+              </div>
             </div>
           </div>
         </main>
