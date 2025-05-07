@@ -19,7 +19,7 @@ export default function Navbar() {
                     <a
                         href="/Tim Martin Süllner.pdf"
                         target="_blank"
-                        className="hidden md:flex items-center text-white bg-gradient-to-r from-red-600 to-red-800 hover:from-red-800 hover:to-red-900 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 transition-transform hover:scale-110 hover:animate-pulse animate-float-delay-100"
+                        className="hidden md:flex items-center text-white bg-gradient-to-r from-green-600 to-green-800 hover:from-green-800 hover:to-green-900 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 transition-transform hover:scale-110 hover:animate-pulse animate-float-delay-100"
                     >
                         <img src="pdf-icon.svg" className="w-5 h-5 mr-2 invert"></img>
                         Just give me the CV!

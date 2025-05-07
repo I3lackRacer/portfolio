@@ -17,7 +17,7 @@ export default function Strengths() {
                                 <span className="text-white">95%</span>
                             </div>
                             <div className="h-4 bg-gray-700 rounded-full">
-                                <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                             </div>
                         </div>
 
@@ -27,7 +27,7 @@ export default function Strengths() {
                                 <span className="text-white">90%</span>
                             </div>
                             <div className="h-4 bg-gray-700 rounded-full">
-                                <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] delay-100 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] delay-100 bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                             </div>
                         </div>
 
@@ -37,7 +37,7 @@ export default function Strengths() {
                                 <span className="text-white">85%</span>
                             </div>
                             <div className="h-4 bg-gray-700 rounded-full">
-                                <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] delay-200 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] delay-200 bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                             </div>
                         </div>
 
@@ -47,7 +47,7 @@ export default function Strengths() {
                                 <span className="text-white">85%</span>
                             </div>
                             <div className="h-4 bg-gray-700 rounded-full">
-                                <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] delay-400 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] delay-400 bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                             </div>
                         </div>
 
@@ -57,7 +57,7 @@ export default function Strengths() {
                                 <span className="text-white">75%</span>
                             </div>
                             <div className="h-4 bg-gray-700 rounded-full">
-                                <div className="h-full w-[75%] animate-[slideIn_1s_ease-out] delay-300 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                <div className="h-full w-[75%] animate-[slideIn_1s_ease-out] delay-300 bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                             </div>
                         </div>
 
@@ -67,7 +67,7 @@ export default function Strengths() {
                                 <span className="text-white">60%</span>
                             </div>
                             <div className="h-4 bg-gray-700 rounded-full">
-                                <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] delay-500 bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] delay-500 bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export default function Strengths() {
                                         <span className="text-white">95%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -101,7 +101,7 @@ export default function Strengths() {
                                         <span className="text-white">90%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -114,7 +114,7 @@ export default function Strengths() {
                                         <span className="text-white">60%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ export default function Strengths() {
                                         <span className="text-white">95%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -146,7 +146,7 @@ export default function Strengths() {
                                         <span className="text-white">90%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -159,7 +159,7 @@ export default function Strengths() {
                                         <span className="text-white">85%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[85%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -172,7 +172,7 @@ export default function Strengths() {
                                         <span className="text-white">80%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -185,7 +185,7 @@ export default function Strengths() {
                                         <span className="text-white">80%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -198,7 +198,7 @@ export default function Strengths() {
                                         <span className="text-white">60%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[60%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@ export default function Strengths() {
                                         <span className="text-white">90%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -230,7 +230,7 @@ export default function Strengths() {
                                         <span className="text-white">80%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -243,7 +243,7 @@ export default function Strengths() {
                                         <span className="text-white">70%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[70%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[70%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -256,7 +256,7 @@ export default function Strengths() {
                                         <span className="text-white">50%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[50%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[50%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +275,7 @@ export default function Strengths() {
                                         <span className="text-white">90%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -288,7 +288,7 @@ export default function Strengths() {
                                         <span className="text-white">65%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -301,7 +301,7 @@ export default function Strengths() {
                                         <span className="text-white">65%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +320,7 @@ export default function Strengths() {
                                         <span className="text-white">95%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -333,7 +333,7 @@ export default function Strengths() {
                                         <span className="text-white">90%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -346,7 +346,7 @@ export default function Strengths() {
                                         <span className="text-white">80%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[80%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +365,7 @@ export default function Strengths() {
                                         <span className="text-white">95%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[95%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -378,7 +378,7 @@ export default function Strengths() {
                                         <span className="text-white">90%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[90%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
 
@@ -391,7 +391,7 @@ export default function Strengths() {
                                         <span className="text-white">65%</span>
                                     </div>
                                     <div className="h-4 bg-gray-700 rounded-full">
-                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-red-600 to-red-800 rounded-full"></div>
+                                        <div className="h-full w-[65%] animate-[slideIn_1s_ease-out] bg-gradient-to-r from-green-500 to-green-700 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
