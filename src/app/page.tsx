@@ -8,7 +8,7 @@ export default function Home() {
   const whatAmI = [
     "a passionate developer",
     "a backend specialist",
-    "a system integrator", 
+    "a system integrator",
     "a DevOps enthusiast",
     "a problem solver",
     "a team player",
@@ -23,11 +23,11 @@ export default function Home() {
 
   const [iAm, setIAm] = useState("a passionate developer");
 
-  useEffect(() =>{
+  useEffect(() => {
     const interval = setInterval(() => {
-        const currentIndex = whatAmI.indexOf(iAm);
-        const nextIndex = (currentIndex + 1) % whatAmI.length;
-        setIAm(whatAmI[nextIndex]);
+      const currentIndex = whatAmI.indexOf(iAm);
+      const nextIndex = (currentIndex + 1) % whatAmI.length;
+      setIAm(whatAmI[nextIndex]);
     }, 2000);
 
     return () => clearInterval(interval);
@@ -45,7 +45,7 @@ export default function Home() {
                 <div className="w-full lg:w-1/2 animate-slide-in-left">
                   <div className="space-y-4">
                     <h1 className="text-6xl md:text-8xl font-bold text-white">Hi, I'm <span className="pacifico-regular">Tim</span></h1>
-                    <p className="text-3xl text-red-500 pacifico-regular opacity-50 animate-[fadeIn_1s_ease-out_forwards]">{iAm}</p>
+                    <p className="text-3xl text-green-500 pacifico-regular opacity-50 animate-[fadeIn_1s_ease-out_forwards]">{iAm}</p>
                     <p className="text-xl text-white"> with a background in application development and extensive experience.
                       My strengths lie in backend development, but I also have a keen interest in frontend work.
                       Additionally, I have experience in DevOps and a solid understanding of system integration.
@@ -169,7 +169,7 @@ export default function Home() {
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Spring</span>
                   </div>
                   <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://expressjs.com', '_blank')}>
-                    <i className="devicon-express-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <i className="devicon-express-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100 invert"></i>
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Express</span>
                   </div>
                   <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://nestjs.com', '_blank')}>
@@ -212,7 +212,7 @@ export default function Home() {
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">Nginx</span>
                   </div>
                   <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://github.com', '_blank')}>
-                    <i className="devicon-github-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100"></i>
+                    <i className="devicon-github-original colored text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-100 invert"></i>
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm mt-2">GitHub</span>
                   </div>
                   <div className="group relative flex flex-col items-center cursor-pointer" onClick={() => window.open('https://gitlab.com', '_blank')}>
@@ -290,7 +290,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-12">
-              <p className="text-xl text-gray-300">That's a lot of technologies! Want to know where my strengths lie? <a href="/strengths" className="text-blue-500 hover:text-blue-600 transition-colors underline">
+              <p className="text-xl text-gray-300">That's a lot of technologies! Want to know where my strengths lie? <a href="/strengths" className="text-green-500 hover:text-green-600 transition-colors underline">
                 Check out my strengths
               </a></p>
             </div>
@@ -305,12 +305,12 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-white mb-2">Project Name</h3>
                 <p className="text-gray-300 mb-4">Brief description of the project and your role in it.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-500 text-white px-2 py-1 rounded text-sm">React</span>
-                  <span className="bg-blue-500 text-white px-2 py-1 rounded text-sm">Node.js</span>
+                  <span className="bg-green-700 text-white px-2 py-1 rounded text-sm">React</span>
+                  <span className="bg-green-700 text-white px-2 py-1 rounded text-sm">Node.js</span>
                 </div>
                 <div className="flex gap-4">
-                  <a href="#" className="text-blue-400 hover:text-blue-300">Demo</a>
-                  <a href="#" className="text-blue-400 hover:text-blue-300">GitHub</a>
+                  <a href="#" className="text-green-400 hover:text-green-700">Demo</a>
+                  <a href="#" className="text-green-400 hover:text-green-700">GitHub</a>
                 </div>
               </div>
               {/* Add more project cards */}
@@ -320,53 +320,91 @@ export default function Home() {
           {/* Experience Section */}
           <div className="py-16 px-4">
             <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Work Experience</h2>
-            <div className="max-w-4xl mx-auto space-y-8">
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="text-xl font-bold text-white">Software Developer (Working Student)</h3>
-                <p className="text-blue-400">Enercast GmbH, Kassel</p>
-                <p className="text-gray-400">10/2022 - 06/2024</p>
-                <ul className="list-disc list-inside text-gray-300 mt-2">
-                  <li>Spring Web API Development</li>
-                  <li>File parser development for data import/export</li>
-                  <li>Algorithm development for solar/wind plant data processing</li>
-                </ul>
-              </div>
+            <div className="max-w-4xl mx-auto relative">
+              {/* Vertical Timeline Line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-[110%] w-1 bg-gradient-to-t from-green-500 via-green-500 to-transparent" style={{ top: '-5%' }}></div>
 
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="text-xl font-bold text-white">IT Support / SharePoint Integration (Working Student)</h3>
-                <p className="text-blue-400">Technoform Glass Insulation GmbH, Lohfelden</p>
-                <p className="text-gray-400">08/2021 - 07/2022</p>
-                <ul className="list-disc list-inside text-gray-300 mt-2">
-                  <li>SharePoint Administration and Training</li>
-                  <li>SharePoint Website Development</li>
-                  <li>Internal First Level IT Support</li>
-                </ul>
-              </div>
+              {/* Timeline Items */}
+              <div className="space-y-16">
+                {/* Faunhofer IEE */}
+                <div className="flex justify-start md:w-1/2 relative">
+                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="bg-gray-800 rounded-lg p-6 ml-6">
+                    <h3 className="text-xl font-bold text-white">Software Developer (Working Student)</h3>
+                    <p className="text-green-400">Fraunhofer IEE, Kassel</p>
+                    <p className="text-gray-400">04/2025 - Present</p>
+                    <ul className="list-disc list-inside text-gray-300 mt-2">
+                      <li>Spring Web API Development</li>
+                      <li>Vue Frontend Development</li>
+                      <li>Frontend Data Visualization</li>
+                      <li>Python Backend Development</li>
+                    </ul>
+                  </div>
+                </div>
 
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="text-xl font-bold text-white">Application Developer (Apprenticeship)</h3>
-                <p className="text-blue-400">fino create GmbH, Kassel</p>
-                <p className="text-gray-400">09/2018 - 07/2021</p>
-                <ul className="list-disc list-inside text-gray-300 mt-2">
-                  <li>Backend Development</li>
-                  <li>Microservices Development</li>
-                  <li>Service Monitoring</li>
-                  <li>Code Reviews</li>
-                  <li>Scrum Project Planning</li>
-                  <li>REST API Development</li>
-                </ul>
-              </div>
+                {/* Enercast */}
+                <div className="flex justify-end md:w-1/2 ml-auto relative">
+                  <div className="w-4 h-4 absolute left-0 top-5 transform -translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="bg-gray-800 rounded-lg p-6 ml-6">
+                    <h3 className="text-xl font-bold text-white">Software Developer (Working Student)</h3>
+                    <p className="text-green-400">Enercast GmbH, Kassel</p>
+                    <p className="text-gray-400">10/2022 - 06/2024</p>
+                    <ul className="list-disc list-inside text-gray-300 mt-2">
+                      <li>Spring Web API Development</li>
+                      <li>File parser development for data import/export</li>
+                      <li>Algorithm development for solar/wind plant data processing</li>
+                    </ul>
+                  </div>
+                </div>
 
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="text-xl font-bold text-white">IT Intern</h3>
-                <p className="text-blue-400">Technoform Bautec GmbH, Fuldabrück</p>
-                <p className="text-gray-400">09/2016 - 07/2017</p>
-                <ul className="list-disc list-inside text-gray-300 mt-2">
-                  <li>Operating System Installation</li>
-                  <li>User Training</li>
-                  <li>IT Asset Management</li>
-                  <li>Hardware Updates/Upgrades</li>
-                </ul>
+                {/* Technoform Glass */}
+                <div className="flex justify-start md:w-1/2 relative">
+                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="bg-gray-800 rounded-lg p-6 mr-6">
+                    <h3 className="text-xl font-bold text-white">IT Support / SharePoint Integration (Working Student)</h3>
+                    <p className="text-green-400">Technoform Glass Insulation GmbH, Lohfelden</p>
+                    <p className="text-gray-400">08/2021 - 07/2022</p>
+                    <ul className="list-disc list-inside text-gray-300 mt-2">
+                      <li>SharePoint Administration and Training</li>
+                      <li>SharePoint Website Development</li>
+                      <li>Internal First Level IT Support</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* fino create */}
+                <div className="flex justify-end md:w-1/2 ml-auto relative">
+                  <div className="w-4 h-4 absolute left-0 top-5 transform -translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="bg-gray-800 rounded-lg p-6 ml-6">
+                    <h3 className="text-xl font-bold text-white">Application Developer (Apprenticeship)</h3>
+                    <p className="text-green-400">fino create GmbH, Kassel</p>
+                    <p className="text-gray-400">09/2018 - 07/2021</p>
+                    <ul className="list-disc list-inside text-gray-300 mt-2">
+                      <li>Backend Development</li>
+                      <li>Microservices Development</li>
+                      <li>Service Monitoring</li>
+                      <li>Code Reviews</li>
+                      <li>Scrum Project Planning</li>
+                      <li>REST API Development</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Technoform Bautec */}
+                <div className="flex justify-start md:w-1/2 relative">
+                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="bg-gray-800 rounded-lg p-6 mr-6">
+                    <h3 className="text-xl font-bold text-white">IT Intern</h3>
+                    <p className="text-green-400">Technoform Bautec GmbH, Fuldabrück</p>
+                    <p className="text-gray-400">09/2016 - 07/2017</p>
+                    <ul className="list-disc list-inside text-gray-300 mt-2">
+                      <li>Operating System Installation</li>
+                      <li>User Training</li>
+                      <li>IT Asset Management</li>
+                      <li>Hardware Updates/Upgrades</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -375,23 +413,44 @@ export default function Home() {
           <div className="py-16 px-4">
             <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Education</h2>
             <div className="max-w-4xl mx-auto space-y-8">
-              <div className="border-l-4 border-blue-500 pl-4">
+              <div className="border-l-4 border-green-500 pl-4">
                 <h3 className="text-xl font-bold text-white">Bachelor in Computer Science</h3>
-                <p className="text-blue-400">Technische Hochschule Mittelhessen, Gießen</p>
+                <p className="text-green-400">Technische Hochschule Mittelhessen, Gießen</p>
                 <p className="text-gray-400">2021 - Present</p>
               </div>
 
-              <div className="border-l-4 border-blue-500 pl-4">
+              <div className="border-l-4 border-green-500 pl-4">
                 <h3 className="text-xl font-bold text-white">IT Specialist for Application Development</h3>
-                <p className="text-blue-400">fino create GmbH</p>
+                <p className="text-green-400">fino create GmbH</p>
                 <p className="text-gray-400">2018 - 2021</p>
               </div>
 
-              <div className="border-l-4 border-blue-500 pl-4">
+              <div className="border-l-4 border-green-500 pl-4">
                 <h3 className="text-xl font-bold text-white">Advanced Technical College Entrance Qualification</h3>
-                <p className="text-blue-400">Max Eyth Schule, Kassel</p>
+                <p className="text-green-400">Max Eyth Schule, Kassel</p>
                 <p className="text-gray-400">2016 - 2018</p>
                 <p className="text-gray-300 mt-2">Information Technology (Grade: 2.1)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Information Section */}
+          <div className="py-16 px-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Additional Information</h2>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+              <div className="border-l-4 border-green-500 pl-4">
+                <h3 className="text-xl font-bold text-white mb-4">Languages</h3>
+                <ul className="text-gray-300">
+                  <li>German - Native</li>
+                  <li>English - B2</li>
+                </ul>
+              </div>
+              <div className="border-l-4 border-green-500 pl-4">
+                <h3 className="text-xl font-bold text-white mb-4">Other</h3>
+                <ul className="text-gray-300">
+                  <li>Driver's License Class B</li>
+                  <li>Volunteer IT Support for Seniors</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -401,30 +460,9 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Get in Touch</h2>
             <div className="max-w-2xl mx-auto">
               <div className="flex flex-col items-center gap-4">
-                <a href="mailto:tim@suellner.de" className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
+                <a href="mailto:tim@suellner.de" className="px-6 py-3 bg-green-700 hover:bg-green-800 text-white rounded-lg transition-colors">
                   Contact me via Email
                 </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Additional Information Section */}
-          <div className="py-16 px-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Additional Information</h2>
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="text-xl font-bold text-white mb-4">Languages</h3>
-                <ul className="text-gray-300">
-                  <li>German - Native</li>
-                  <li>English - B2</li>
-                </ul>
-              </div>
-              <div className="border-l-4 border-blue-500 pl-4">
-                <h3 className="text-xl font-bold text-white mb-4">Other</h3>
-                <ul className="text-gray-300">
-                  <li>Driver's License Class B</li>
-                  <li>Volunteer IT Support for Seniors</li>
-                </ul>
               </div>
             </div>
           </div>
