@@ -16,14 +16,6 @@ export default function Navbar() {
                     <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Portfolio</span>
                 </a>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <a
-                        href="/Tim Martin Süllner.pdf"
-                        target="_blank"
-                        className="hidden md:flex items-center text-white bg-gradient-to-r from-green-600 to-green-800 hover:from-green-800 hover:to-green-900 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 transition-transform hover:scale-110 hover:animate-pulse animate-float-delay-100"
-                    >
-                        <img src="pdf-icon.svg" className="w-5 h-5 mr-2 invert"></img>
-                        Just give me the CV!
-                    </a>
                     <button
                         onClick={toggleMenu}
                         type="button"
