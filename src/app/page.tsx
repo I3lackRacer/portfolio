@@ -18,7 +18,6 @@ export default function Home() {
     "an architecture enthusiast"
   ]
 
-  // Find longest string to set minimum width
   const maxLength = Math.max(...whatAmI.map(text => text.length));
 
   const [iAm, setIAm] = useState("a passionate developer");
