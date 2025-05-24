@@ -55,6 +55,35 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
+              <div className="mb-4">
+                <img
+                  src="/portfolio-example.png"
+                  alt="Portfolio Screenshot"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+              </div>
+              <h2 className="text-2xl font-semibold text-white mb-4">Personal Portfolio</h2>
+              <p className="text-gray-300 mb-4">
+                This is my personal portfolio website, built with Next.js, React, and Tailwind CSS. It showcases my skills, projects, and experience.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Next.js</span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">React</span>
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm">Tailwind CSS</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">TypeScript</span>
+              </div>
+              <div className="flex gap-4">
+                <a
+                  href="https://github.com/I3lackRacer/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import ImageModal from "./components/ImageModal";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
 
@@ -303,47 +304,52 @@ export default function Home() {
             <div className="pt-20 px-4">
               <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
-                    <div
-                      className="mb-4 cursor-pointer transform transition-transform hover:scale-[1.02]"
-                      onClick={() => setIsModalOpen(true)}
-                    >
-                      <img
-                        src="/work.suellner.dev-example.png"
-                        alt="Work Time Tracker Screenshot"
-                        className="w-full h-48 object-cover rounded-lg"
-                      />
-                    </div>
-                    <h2 className="text-2xl font-semibold text-white mb-4">Work Time Tracker</h2>
-                    <p className="text-gray-300 mb-4">
-                      A modern web application for tracking work hours with a clean, user-friendly interface.
-                      Built with React, TypeScript, Spring Boot, and SQLite.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">React</span>
-                      <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">TypeScript</span>
-                      <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm">Spring Boot</span>
-                      <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">SQLite</span>
-                    </div>
-                    <div className="flex gap-4">
-                      <a
-                        href="https://work.suellner.dev/login"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors"
-                      >
-                        Live Demo
-                      </a>
-                      <a
-                        href="https://github.com/I3lackRacer/work-tracker"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors"
-                      >
-                        GitHub
-                      </a>
-                    </div>
-                  </div>
+                  <ProjectCard
+                    image="/work.suellner.dev-example.png"
+                    imageAlt="Work Time Tracker Screenshot"
+                    title="Work Time Tracker"
+                    description="A modern web application for tracking work hours with a clean, user-friendly interface. Built with React, TypeScript, Spring Boot, and SQLite."
+                    techs={["React", "TypeScript", "Spring Boot", "SQLite"]}
+                    techColors={[
+                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+                      "px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm",
+                      "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
+                    ]}
+                    links={[
+                      {
+                        label: "Live Demo",
+                        href: "https://work.suellner.dev/login",
+                        className: "text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors",
+                      },
+                      {
+                        label: "GitHub",
+                        href: "https://github.com/I3lackRacer/work-tracker",
+                        className: "text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors",
+                      },
+                    ]}
+                    onImageClick={() => setIsModalOpen(true)}
+                  />
+                  <ProjectCard
+                    image="/portfolio-example.png"
+                    imageAlt="Portfolio Screenshot"
+                    title="Personal Portfolio"
+                    description="This is my personal portfolio website, built with Next.js, React, and Tailwind CSS. It showcases my skills, projects, and experience."
+                    techs={["Next.js", "React", "Tailwind CSS", "TypeScript"]}
+                    techColors={[
+                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+                      "px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm",
+                      "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
+                    ]}
+                    links={[
+                      {
+                        label: "GitHub",
+                        href: "https://github.com/I3lackRacer/portfolio",
+                        className: "text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors",
+                      },
+                    ]}
+                  />
                 </div>
               </div>
               <ImageModal
