@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
+import ImageModal from "./components/ImageModal";
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
   const maxLength = Math.max(...whatAmI.map(text => text.length));
 
   const [iAm, setIAm] = useState("a passionate developer");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -296,23 +298,60 @@ export default function Home() {
           </div>
 
           {/* Projects Section */}
-          <div className="py-16 px-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Featured Projects</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* Project Card Example */}
-              <div className="bg-gray-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform">
-                <h3 className="text-xl font-bold text-white mb-2">Project Name</h3>
-                <p className="text-gray-300 mb-4">Brief description of the project and your role in it.</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-green-700 text-white px-2 py-1 rounded text-sm">React</span>
-                  <span className="bg-green-700 text-white px-2 py-1 rounded text-sm">Node.js</span>
-                </div>
-                <div className="flex gap-4">
-                  <a href="#" className="text-green-400 hover:text-green-700">Demo</a>
-                  <a href="#" className="text-green-400 hover:text-green-700">GitHub</a>
+          <div className="pt-16 px-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white text-center">Featured Projects</h2>
+            <div className="pt-20 px-4">
+              <div className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
+                    <div
+                      className="mb-4 cursor-pointer transform transition-transform hover:scale-[1.02]"
+                      onClick={() => setIsModalOpen(true)}
+                    >
+                      <img
+                        src="/work.suellner.dev-example.png"
+                        alt="Work Time Tracker Screenshot"
+                        className="w-full h-48 object-cover rounded-lg"
+                      />
+                    </div>
+                    <h2 className="text-2xl font-semibold text-white mb-4">Work Time Tracker</h2>
+                    <p className="text-gray-300 mb-4">
+                      A modern web application for tracking work hours with a clean, user-friendly interface.
+                      Built with React, TypeScript, Spring Boot, and SQLite.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">React</span>
+                      <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">TypeScript</span>
+                      <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm">Spring Boot</span>
+                      <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">SQLite</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <a
+                        href="https://work.suellner.dev/login"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/I3lackRacer/work-tracker"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors"
+                      >
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              {/* Add more project cards */}
+              <ImageModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                imageSrc="/work.suellner.dev-example.png"
+                alt="Work Time Tracker Screenshot"
+              />
             </div>
           </div>
 
@@ -428,7 +467,6 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-white">Advanced Technical College Entrance Qualification</h3>
                 <p className="text-green-400">Max Eyth Schule, Kassel</p>
                 <p className="text-gray-400">2016 - 2018</p>
-                <p className="text-gray-300 mt-2">Information Technology (Grade: 2.1)</p>
               </div>
             </div>
           </div>

@@ -33,10 +33,10 @@ export default function Navbar() {
                             <a href="/" className="block py-2 px-3 text-white hover:text-gray-300">Home</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white hover:text-gray-300">About</a>
+                            <a href="/strengths" className="block py-2 px-3 text-white hover:text-gray-300">Strengths</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white hover:text-gray-300">Projects</a>
+                            <a href="/projects" className="block py-2 px-3 text-white hover:text-gray-300">Projects</a>
                         </li>
                         <li>
                             <a href="mailto:tim.suellner@web.de" className="block py-2 px-3 text-white hover:text-gray-300">Contact</a>
