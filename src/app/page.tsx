@@ -308,13 +308,14 @@ export default function Home() {
                     image="/work.suellner.dev-example.png"
                     imageAlt="Work Time Tracker Screenshot"
                     title="Work Time Tracker"
-                    description="A modern web application for tracking work hours with a clean, user-friendly interface. Built with React, TypeScript, Spring Boot, and SQLite."
-                    techs={["React", "TypeScript", "Spring Boot", "SQLite"]}
+                    description="A full-stack time tracking application with real-time clock in/out, session management, and calendar view. Features JWT authentication, RESTful APIs, and Excel export functionality."
+                    techs={["React", "TypeScript", "Tailwind CSS", "Spring Boot", "SQLite"]}
                     techColors={[
                       "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
-                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
-                      "px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm",
+                      "px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm",
                       "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
+                      "px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm",
+                      "px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-sm",
                     ]}
                     links={[
                       {
@@ -335,11 +336,11 @@ export default function Home() {
                     imageAlt="Portfolio Screenshot"
                     title="Personal Portfolio"
                     description="This is my personal portfolio website, built with Next.js, React, and Tailwind CSS. It showcases my skills, projects, and experience."
-                    techs={["Next.js", "React", "Tailwind CSS", "TypeScript"]}
+                    techs={["Next.js", "React", "TypeScript", "Tailwind CSS"]}
                     techColors={[
                       "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
                       "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
-                      "px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm",
+                      "px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm",
                       "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
                     ]}
                     links={[
@@ -350,12 +351,32 @@ export default function Home() {
                       },
                     ]}
                   />
+                  <ProjectCard
+                    image="/card-trainer-example.png"
+                    imageAlt="Card Trainer Screenshot"
+                    title="Card Trainer"  
+                    description="An interactive flashcard learning platform with achievements and progress tracking. Built with a microservice architecture for scalability."
+                    techs={["Angular", "Spring Boot", "Bootstrap", "PostgreSQL"]}
+                    techColors={[
+                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+                      "px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm",
+                      "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
+                      "px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-sm",
+                    ]}
+                    links={[
+                      {
+                        label: "GitHub",
+                        href: "https://github.com/EikeMenzel/card-trainer",
+                        className: "text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors",
+                      },
+                    ]}
+                  />
                 </div>
               </div>
               <ImageModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                imageSrc="/work.suellner.dev-example.png"
+                imageSrc="/portfolio-example.png"
                 alt="Work Time Tracker Screenshot"
               />
             </div>
@@ -458,19 +479,19 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Education</h2>
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="border-l-4 border-green-500 pl-4">
-                <h3 className="text-xl font-bold text-white">Bachelor in Computer Science</h3>
+                <h3 className="text-xl font-bold text-white">Bachelor in Computer Science <span className="text-gray-400">(B.Sc.)</span></h3>
                 <p className="text-green-400">Technische Hochschule Mittelhessen, Gießen</p>
                 <p className="text-gray-400">2021 - Present</p>
               </div>
 
               <div className="border-l-4 border-green-500 pl-4">
-                <h3 className="text-xl font-bold text-white">IT Specialist for Application Development</h3>
+                <h3 className="text-xl font-bold text-white">IT Specialist for Application Development <span className="text-gray-400">(Ausbildung Anwendungsentwicklung)</span></h3>
                 <p className="text-green-400">fino create GmbH</p>
                 <p className="text-gray-400">2018 - 2021</p>
               </div>
 
               <div className="border-l-4 border-green-500 pl-4">
-                <h3 className="text-xl font-bold text-white">Advanced Technical College Entrance Qualification</h3>
+                <h3 className="text-xl font-bold text-white">Advanced Technical College Entrance Qualification <span className="text-gray-400">(Fachhochschulreife)</span></h3>
                 <p className="text-green-400">Max Eyth Schule, Kassel</p>
                 <p className="text-gray-400">2016 - 2018</p>
               </div>

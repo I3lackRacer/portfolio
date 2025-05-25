@@ -84,6 +84,35 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
+              <div className="mb-4">
+                <img
+                  src="/card-trainer-example.png"
+                  alt="Card Trainer Screenshot"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+              </div>
+              <h2 className="text-2xl font-semibold text-white mb-4">Card Trainer</h2>
+              <p className="text-gray-300 mb-4">
+                An interactive flashcard learning platform with achievements and progress tracking. Built with a microservice architecture for scalability.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Angular</span>
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm">Spring Boot</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">Bootstrap</span>
+                <span className="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-sm">PostgreSQL</span>
+              </div>
+              <div className="flex gap-4">
+                <a
+                  href="https://github.com/EikeMenzel/card-trainer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
