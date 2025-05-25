@@ -372,7 +372,7 @@ export default function Home() {
               <div className="space-y-16">
                 {/* Faunhofer IEE */}
                 <div className="flex justify-start md:w-1/2 relative">
-                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
                   <div className="bg-gray-800 rounded-lg p-6 ml-6">
                     <h3 className="text-xl font-bold text-white">Software Developer (Working Student)</h3>
                     <p className="text-green-400">Fraunhofer IEE, Kassel</p>
@@ -388,7 +388,7 @@ export default function Home() {
 
                 {/* Enercast */}
                 <div className="flex justify-end md:w-1/2 ml-auto relative">
-                  <div className="w-4 h-4 absolute left-0 top-5 transform -translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="w-4 h-4 absolute left-0 top-5 transform -translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
                   <div className="bg-gray-800 rounded-lg p-6 ml-6">
                     <h3 className="text-xl font-bold text-white">Software Developer (Working Student)</h3>
                     <p className="text-green-400">Enercast GmbH, Kassel</p>
@@ -403,7 +403,7 @@ export default function Home() {
 
                 {/* Technoform Glass */}
                 <div className="flex justify-start md:w-1/2 relative">
-                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
                   <div className="bg-gray-800 rounded-lg p-6 mr-6">
                     <h3 className="text-xl font-bold text-white">IT Support / SharePoint Integration (Working Student)</h3>
                     <p className="text-green-400">Technoform Glass Insulation GmbH, Lohfelden</p>
@@ -418,7 +418,7 @@ export default function Home() {
 
                 {/* fino create */}
                 <div className="flex justify-end md:w-1/2 ml-auto relative">
-                  <div className="w-4 h-4 absolute left-0 top-5 transform -translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="w-4 h-4 absolute left-0 top-5 transform -translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
                   <div className="bg-gray-800 rounded-lg p-6 ml-6">
                     <h3 className="text-xl font-bold text-white">Application Developer (Apprenticeship)</h3>
                     <p className="text-green-400">fino create GmbH, Kassel</p>
@@ -436,7 +436,7 @@ export default function Home() {
 
                 {/* Technoform Bautec */}
                 <div className="flex justify-start md:w-1/2 relative">
-                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full"></div>
+                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
                   <div className="bg-gray-800 rounded-lg p-6 mr-6">
                     <h3 className="text-xl font-bold text-white">IT Intern</h3>
                     <p className="text-green-400">Technoform Bautec GmbH, Fuldabrück</p>
