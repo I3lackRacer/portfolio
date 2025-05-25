@@ -40,7 +40,7 @@ export default function Home() {
     <>
       <div>
         <Navbar></Navbar>
-        <main>
+        <main className="pt-20 xl:pt-0">
           <div className="pl-0 sd:pl-8 lg:mx-20">
             <div className="min-h-screen flex items-center">
               <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-8 px-4">
