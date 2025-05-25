@@ -382,6 +382,46 @@ export default function Home() {
                     ]}
                     onImageClick={() => handleImageClick("/card-trainer-example.png", "Card Trainer Screenshot")}
                   />
+                  <ProjectCard
+                    image="/sudoku-app-logo.png"
+                    imageAlt="Sudoku App Screenshot"
+                    title="Sudoku App"  
+                    description="A clean, ad-free Sudoku game for Android with customizable themes, dark mode, and optional hints. Built with Flutter for a smooth cross-platform experience."
+                    techs={["Flutter", "Dart", "Material Design"]}
+                    techColors={[
+                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+                      "px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm",
+                      "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
+                    ]}
+                    links={[
+                      {
+                        label: "Play Store",
+                        href: "https://play.google.com/store/apps/details?id=de.invertgaming.sodoku_app",
+                        className: "text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors",
+                      }
+                    ]}
+                    onImageClick={() => handleImageClick("/sudoku-app-logo.png", "Sudoku App Screenshot")}
+                  />
+                  <ProjectCard
+                    image="/fitness-tracker-app-example.png"
+                    imageAlt="Fitness Tracker App Screenshot"
+                    title="Fitness Tracker"  
+                    description="A comprehensive fitness tracking app that helps users monitor workouts, track progress, and achieve fitness goals. Features include exercise logging, progress charts, and workout planning."
+                    techs={["Flutter", "Dart", "Material Design"]}
+                    techColors={[
+                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+                      "px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm",
+                      "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
+                    ]}
+                    links={[
+                      {
+                        label: "Play Store (Coming Soon)",
+                        href: "#",
+                        className: "text-gray-400 bg-gray-700 cursor-not-allowed px-4 py-2 rounded-lg",
+                      }
+                    ]}
+                    onImageClick={() => handleImageClick("/fitness-tracker-app-example.png", "Fitness Tracker App Screenshot")}
+                  />
                 </div>
               </div>
               <ImageModal

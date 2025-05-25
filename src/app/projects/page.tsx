@@ -128,6 +128,66 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
+              <div 
+                className="mb-4 cursor-pointer transform transition-transform hover:scale-[1.02]"
+                onClick={() => handleImageClick("/sudoku-app-logo.png", "Sudoku App Screenshot")}
+              >
+                <img
+                  src="/sudoku-app-logo.png"
+                  alt="Sudoku App Screenshot"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+              </div>
+              <h2 className="text-2xl font-semibold text-white mb-4">Sudoku App</h2>
+              <p className="text-gray-300 mb-4">
+                A clean, ad-free Sudoku game for Android with customizable themes, dark mode, and optional hints. Built with Flutter for a smooth cross-platform experience.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Flutter</span>
+                <span className="px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm">Dart</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">Material Design</span>
+              </div>
+              <div className="flex gap-4">
+                <a
+                  href="https://play.google.com/store/apps/details?id=de.invertgaming.sodoku_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors"
+                >
+                  Play Store
+                </a>
+              </div>
+            </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
+              <div 
+                className="mb-4 cursor-pointer transform transition-transform hover:scale-[1.02]"
+                onClick={() => handleImageClick("/fitness-tracker-app-example.png", "Fitness Tracker App Screenshot")}
+              >
+                <img
+                  src="/fitness-tracker-app-example.png"
+                  alt="Fitness Tracker App Screenshot"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+              </div>
+              <h2 className="text-2xl font-semibold text-white mb-4">Fitness Tracker</h2>
+              <p className="text-gray-300 mb-4">
+                A comprehensive fitness tracking app that helps users monitor workouts, track progress, and achieve fitness goals. Features include exercise logging, progress charts, and workout planning.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Flutter</span>
+                <span className="px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm">Dart</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">Material Design</span>
+              </div>
+              <div className="flex gap-4">
+                <a
+                  href="#"
+                  className="text-gray-400 bg-gray-700 cursor-not-allowed px-4 py-2 rounded-lg"
+                >
+                  Play Store (Coming Soon)
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
