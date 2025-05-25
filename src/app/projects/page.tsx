@@ -6,6 +6,15 @@ import Navbar from '../components/Navbar';
 
 export default function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState({
+    src: "",
+    alt: ""
+  });
+
+  const handleImageClick = (src: string, alt: string) => {
+    setModalImage({ src, alt });
+    setIsModalOpen(true);
+  };
 
   return (
     <main className="min-h-screen bg-[#0a0a0a]">
@@ -17,7 +26,7 @@ export default function Projects() {
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
               <div 
                 className="mb-4 cursor-pointer transform transition-transform hover:scale-[1.02]"
-                onClick={() => setIsModalOpen(true)}
+                onClick={() => handleImageClick("/work.suellner.dev-example.png", "Work Time Tracker Screenshot")}
               >
                 <img 
                   src="/work.suellner.dev-example.png" 
@@ -56,7 +65,10 @@ export default function Projects() {
               </div>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
-              <div className="mb-4">
+              <div 
+                className="mb-4 cursor-pointer transform transition-transform hover:scale-[1.02]"
+                onClick={() => handleImageClick("/portfolio-example.png", "Portfolio Screenshot")}
+              >
                 <img
                   src="/portfolio-example.png"
                   alt="Portfolio Screenshot"
@@ -85,7 +97,10 @@ export default function Projects() {
               </div>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
-              <div className="mb-4">
+              <div 
+                className="mb-4 cursor-pointer transform transition-transform hover:scale-[1.02]"
+                onClick={() => handleImageClick("/card-trainer-example.png", "Card Trainer Screenshot")}
+              >
                 <img
                   src="/card-trainer-example.png"
                   alt="Card Trainer Screenshot"
@@ -119,8 +134,8 @@ export default function Projects() {
         <ImageModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          imageSrc="/work.suellner.dev-example.png"
-          alt="Work Time Tracker Screenshot"
+          imageSrc={modalImage.src}
+          alt={modalImage.alt}
         />
       </div>
     </main>

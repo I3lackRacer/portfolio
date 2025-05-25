@@ -24,6 +24,15 @@ export default function Home() {
 
   const [iAm, setIAm] = useState("a passionate developer");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState({
+    src: "",
+    alt: ""
+  });
+
+  const handleImageClick = (src: string, alt: string) => {
+    setModalImage({ src, alt });
+    setIsModalOpen(true);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -329,7 +338,7 @@ export default function Home() {
                         className: "text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors",
                       },
                     ]}
-                    onImageClick={() => setIsModalOpen(true)}
+                    onImageClick={() => handleImageClick("/work.suellner.dev-example.png", "Work Time Tracker Screenshot")}
                   />
                   <ProjectCard
                     image="/portfolio-example.png"
@@ -350,6 +359,7 @@ export default function Home() {
                         className: "text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors",
                       },
                     ]}
+                    onImageClick={() => handleImageClick("/portfolio-example.png", "Portfolio Screenshot")}
                   />
                   <ProjectCard
                     image="/card-trainer-example.png"
@@ -370,14 +380,15 @@ export default function Home() {
                         className: "text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors",
                       },
                     ]}
+                    onImageClick={() => handleImageClick("/card-trainer-example.png", "Card Trainer Screenshot")}
                   />
                 </div>
               </div>
               <ImageModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                imageSrc="/portfolio-example.png"
-                alt="Work Time Tracker Screenshot"
+                imageSrc={modalImage.src}
+                alt={modalImage.alt}
               />
             </div>
           </div>
