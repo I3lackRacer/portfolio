@@ -6,6 +6,7 @@ import ImageModal from "./components/ImageModal";
 import ProjectCard from "./components/ProjectCard";
 import TechStackItem from "./components/TechStackItem";
 import EducationCard from "./components/EducationCard";
+import WorkExperienceCard from "./components/WorkExperienceCard";
 
 export default function Home() {
 
@@ -324,85 +325,71 @@ export default function Home() {
 
               {/* Timeline Items */}
               <div className="space-y-16">
-                {/* Faunhofer IEE */}
-                <div className="flex justify-start md:w-1/2 relative">
-                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
-                  <div className="bg-gray-800 rounded-lg p-6 ml-6">
-                    <h3 className="text-xl font-bold text-white">Software Developer (Working Student)</h3>
-                    <p className="text-green-400">Fraunhofer IEE, Kassel</p>
-                    <p className="text-gray-400">04/2025 - Present</p>
-                    <ul className="list-disc list-inside text-gray-300 mt-2">
-                      <li>Spring Web API Development</li>
-                      <li>Vue Frontend Development</li>
-                      <li>Frontend Data Visualization</li>
-                      <li>Python Backend Development</li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Enercast */}
-                <div className="flex justify-end md:w-1/2 ml-auto relative">
-                  <div className="w-4 h-4 absolute left-0 top-5 transform -translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
-                  <div className="bg-gray-800 rounded-lg p-6 ml-6">
-                    <h3 className="text-xl font-bold text-white">Software Developer (Working Student)</h3>
-                    <p className="text-green-400">Enercast GmbH, Kassel</p>
-                    <p className="text-gray-400">10/2022 - 06/2024</p>
-                    <ul className="list-disc list-inside text-gray-300 mt-2">
-                      <li>Spring Web API Development</li>
-                      <li>File parser development for data import/export</li>
-                      <li>Algorithm development for solar/wind plant data processing</li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Technoform Glass */}
-                <div className="flex justify-start md:w-1/2 relative">
-                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
-                  <div className="bg-gray-800 rounded-lg p-6 mr-6">
-                    <h3 className="text-xl font-bold text-white">IT Support / SharePoint Integration (Working Student)</h3>
-                    <p className="text-green-400">Technoform Glass Insulation GmbH, Lohfelden</p>
-                    <p className="text-gray-400">08/2021 - 07/2022</p>
-                    <ul className="list-disc list-inside text-gray-300 mt-2">
-                      <li>SharePoint Administration and Training</li>
-                      <li>SharePoint Website Development</li>
-                      <li>Internal First Level IT Support</li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* fino create */}
-                <div className="flex justify-end md:w-1/2 ml-auto relative">
-                  <div className="w-4 h-4 absolute left-0 top-5 transform -translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
-                  <div className="bg-gray-800 rounded-lg p-6 ml-6">
-                    <h3 className="text-xl font-bold text-white">Application Developer (Apprenticeship)</h3>
-                    <p className="text-green-400">fino create GmbH, Kassel</p>
-                    <p className="text-gray-400">09/2018 - 07/2021</p>
-                    <ul className="list-disc list-inside text-gray-300 mt-2">
-                      <li>Backend Development</li>
-                      <li>Microservices Development</li>
-                      <li>Service Monitoring</li>
-                      <li>Code Reviews</li>
-                      <li>Scrum Project Planning</li>
-                      <li>REST API Development</li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Technoform Bautec */}
-                <div className="flex justify-start md:w-1/2 relative">
-                  <div className="w-4 h-4 absolute right-0 top-5 transform translate-x-1/2 bg-green-500 rounded-full md:visible invisible"></div>
-                  <div className="bg-gray-800 rounded-lg p-6 mr-6">
-                    <h3 className="text-xl font-bold text-white">IT Intern</h3>
-                    <p className="text-green-400">Technoform Bautec GmbH, Fuldabrück</p>
-                    <p className="text-gray-400">09/2016 - 07/2017</p>
-                    <ul className="list-disc list-inside text-gray-300 mt-2">
-                      <li>Operating System Installation</li>
-                      <li>User Training</li>
-                      <li>IT Asset Management</li>
-                      <li>Hardware Updates/Upgrades</li>
-                    </ul>
-                  </div>
-                </div>
+                <WorkExperienceCard
+                  title="Software Developer (Working Student)"
+                  company="Fraunhofer IEE"
+                  location="Kassel"
+                  date="04/2025 - Present"
+                  bullets={[
+                    "Spring Web API Development",
+                    "Vue Frontend Development",
+                    "Frontend Data Visualization",
+                    "Python Backend Development",
+                  ]}
+                  align="left"
+                />
+                <WorkExperienceCard
+                  title="Software Developer (Working Student)"
+                  company="Enercast GmbH"
+                  location="Kassel"
+                  date="10/2022 - 06/2024"
+                  bullets={[
+                    "Spring Web API Development",
+                    "File parser development for data import/export",
+                    "Algorithm development for solar/wind plant data processing",
+                  ]}
+                  align="right"
+                />
+                <WorkExperienceCard
+                  title="IT Support / SharePoint Integration (Working Student)"
+                  company="Technoform Glass Insulation GmbH"
+                  location="Lohfelden"
+                  date="08/2021 - 07/2022"
+                  bullets={[
+                    "SharePoint Administration and Training",
+                    "SharePoint Website Development",
+                    "Internal First Level IT Support",
+                  ]}
+                  align="left"
+                />
+                <WorkExperienceCard
+                  title="Application Developer (Apprenticeship)"
+                  company="fino create GmbH"
+                  location="Kassel"
+                  date="09/2018 - 07/2021"
+                  bullets={[
+                    "Backend Development",
+                    "Microservices Development",
+                    "Service Monitoring",
+                    "Code Reviews",
+                    "Scrum Project Planning",
+                    "REST API Development",
+                  ]}
+                  align="right"
+                />
+                <WorkExperienceCard
+                  title="IT Intern"
+                  company="Technoform Bautec GmbH"
+                  location="Fuldabrück"
+                  date="09/2016 - 07/2017"
+                  bullets={[
+                    "Operating System Installation",
+                    "User Training",
+                    "IT Asset Management",
+                    "Hardware Updates/Upgrades",
+                  ]}
+                  align="left"
+                />
               </div>
             </div>
           </div>
