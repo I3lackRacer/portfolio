@@ -196,7 +196,7 @@ export default function Home() {
             <div className="pt-20 px-4">
               <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <ProjectCard
+                <ProjectCard
                     image="/work.suellner.dev-example.png"
                     imageAlt="Work Time Tracker Screenshot"
                     title="Work Time Tracker"
@@ -222,6 +222,30 @@ export default function Home() {
                       },
                     ]}
                     onImageClick={() => handleImageClick("/work.suellner.dev-example.png", "Work Time Tracker Screenshot")}
+                  />
+                    <ProjectCard
+                    image="/kenya-ptx-atlas-example.png"
+                    imageAlt="Kenya PtX Atlas Screenshot"
+                    title="Kenya PtX Atlas (Fraunhofer IEE)"
+                    description="An interactive web-based mapping and analysis tool for Power-to-X (PtX) potential in Kenya. Features geospatial data visualization, renewable energy resource mapping, and hydrogen production analysis. Developed at Fraunhofer IEE for energy transition research."
+                    techs={["Vue", "TypeScript", "Bootstrap", "Python", "Postgres", "Leaflet", "Chart.js"]}
+                    techColors={[
+                      "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+                      "px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm",
+                      "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
+                      "px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm",
+                      "px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-sm",
+                      "px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-sm",
+                      "px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm",
+                    ]}
+                    links={[
+                      {
+                        label: "Website",
+                        href: "https://maps.iee.fraunhofer.de/kenya-ptx-atlas/",
+                        className: "text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors",
+                      } ,
+                    ]}
+                    onImageClick={() => handleImageClick("/kenya-ptx-atlas-example.png", "Kenya PtX Atlas Screenshot")}
                   />
                   <ProjectCard
                     image="/portfolio-example.png"

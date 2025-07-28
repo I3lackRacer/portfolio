@@ -45,6 +45,29 @@ export default function Projects() {
       onImageClick: () => handleImageClick("/work.suellner.dev-example.png", "Work Time Tracker Screenshot"),
     },
     {
+      image: "/kenya-ptx-atlas-example.png",
+      imageAlt: "Kenya PtX Atlas Screenshot",
+      title: "Kenya PtX Atlas (Fraunhofer IEE)",
+      description: "An interactive web-based mapping and analysis tool for Power-to-X (PtX) potential in Kenya. Features geospatial data visualization, renewable energy resource mapping, and hydrogen production analysis. Developed at Fraunhofer IEE for energy transition research.",
+      techs: ["Vue", "TypeScript", "Bootstrap", "Python", "Postgres", "Leaflet", "Chart.js"],
+      techColors: [
+        "px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm",
+        "px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm",
+        "px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm",
+        "px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm",
+        "px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-sm",
+        "px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-sm",
+        "px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm",
+      ],
+      links: [
+        {
+          label: "Website",
+          href: "https://maps.iee.fraunhofer.de/kenya-ptx-atlas/",
+        },
+      ],
+      onImageClick: () => handleImageClick("/kenya-ptx-atlas-example.png", "Kenya PtX Atlas Screenshot"),
+    },
+    {
       image: "/portfolio-example.png",
       imageAlt: "Portfolio Screenshot",
       title: "Personal Portfolio",
