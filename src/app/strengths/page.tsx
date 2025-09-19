@@ -93,7 +93,9 @@ export default function Strengths() {
                                 <StrengthEvaluation icon={"sqlite-plain"} iconArgs={"colored"} title={"SQLite"} percentage={80}/>
                                 <StrengthEvaluation icon={"mariadb-plain"} iconArgs={"colored"} title={"MariaDB"} percentage={80}/>
                                 <StrengthEvaluation icon={"redis-plain"} iconArgs={"colored"} title={"Redis"} percentage={70}/>
-                                <StrengthEvaluation icon={"ravendb-original"} iconArgs={"colored"} title={"RavenDB"} percentage={70}/>
+                                <StrengthEvaluation title={"RavenDB"} percentage={70}>
+                                <img src="/ravendb-icon.png" alt="Cursor logo" className="w-8 h-8"/>
+                                </StrengthEvaluation>
                             </div>
                         </div>
 
@@ -104,7 +106,9 @@ export default function Strengths() {
                                 <StrengthEvaluation icon={"intellij-plain"} iconArgs={"colored"} title={"IntelliJ"} percentage={95}/>
                                 <StrengthEvaluation icon={"vscode-plain"} iconArgs={"colored"} title={"VS Code"} percentage={90}/>
                                 <StrengthEvaluation icon={"visualstudio-plain"} iconArgs={"colored"} title={"Visual Studio"} percentage={65}/>
-                                <StrengthEvaluation icon={"cursor-plain"} iconArgs={"colored"} title={"Cursor"} percentage={60}/>
+                                <StrengthEvaluation title={"Cursor"} percentage={60}>
+                                    <img src="/cursor-ai-icon.png" alt="Cursor logo" className="w-8 h-8"/>
+                                </StrengthEvaluation>
                             </div>
                         </div>
                     </div>
