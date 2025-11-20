@@ -39,7 +39,7 @@ export default function Navbar() {
                             <a href="/projects" className="block py-2 px-3 text-white hover:text-gray-300">Projects</a>
                         </li>
                         <li>
-                            <a href="mailto:tim.suellner@web.de" className="block py-2 px-3 text-white hover:text-gray-300">Contact</a>
+                            <a href="mailto:mail@timsuellner.com" className="block py-2 px-3 text-white hover:text-gray-300">Contact</a>
                         </li>
                     </ul>
                 </div>

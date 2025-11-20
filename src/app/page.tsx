@@ -454,7 +454,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">Get in Touch</h2>
             <div className="max-w-2xl mx-auto">
               <div className="flex flex-col items-center gap-4">
-                <a href="mailto:tim@suellner.de" className="px-6 py-3 bg-green-700 hover:bg-green-800 text-white rounded-lg transition-colors">
+                <a href="mailto:mail@timsuellner.com" className="px-6 py-3 bg-green-700 hover:bg-green-800 text-white rounded-lg transition-colors">
                   Contact me via Email
                 </a>
               </div>
