@@ -45,6 +45,7 @@ export default function Strengths() {
                                 <StrengthEvaluation icon={"dart-plain"} iconArgs={"colored"} title={"Dart"} percentage={70}/>
                                 <StrengthEvaluation icon={"javascript-plain"} iconArgs={"colored"} title={"JavaScript"} percentage={60}/>
                                 <StrengthEvaluation icon={"php-plain"} iconArgs={"colored"} title={"PHP"} percentage={60}/>
+                                <StrengthEvaluation icon={"rust-plain"} iconArgs={"colored"} title={"Rust"} percentage={40}/>
                                 <StrengthEvaluation icon={"cplusplus-plain"} iconArgs={"colored"} title={"C++"} percentage={40}/>
                                 <StrengthEvaluation icon={"c-plain"} iconArgs={"colored"} title={"C"} percentage={40}/>
                             </div>

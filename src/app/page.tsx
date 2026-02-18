@@ -118,6 +118,7 @@ export default function Home() {
                   <TechStackItem icon="typescript" name="TypeScript" link="https://www.typescriptlang.org" />
                   <TechStackItem icon="dart" name="Dart" link="https://dart.dev" />
                   <TechStackItem icon="php" name="PHP" link="https://www.php.net" />
+                  <TechStackItem icon="rust" name="Rust" link="https://rust-lang.org/" />
                   <TechStackItem icon="cplusplus" name="C++" link="https://isocpp.org" />
                   <TechStackItem icon="c" name="C" link="https://en.cppreference.com/w/c" />
                 </div>
