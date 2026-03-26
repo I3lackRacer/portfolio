@@ -101,7 +101,9 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-6">Operating Systems</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
                   <TechStackItem icon="windows11" name="Windows" link="https://www.microsoft.com/windows" />
-                  <TechStackItem icon="linux" name="Linux" invert={true} link="https://www.linux.org/" />
+                  <TechStackItem name="Linux" link="https://www.linux.org/" >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" className="text-6xl mx-auto transition-transform group-hover:scale-110 animate-float-delay-200 h-20" />
+                  </TechStackItem>
                   <TechStackItem icon="apple" name="macOS" invert={true} link="https://www.apple.com/macos" />
                 </div>
               </div>
@@ -118,6 +120,7 @@ export default function Home() {
                   <TechStackItem icon="typescript" name="TypeScript" link="https://www.typescriptlang.org" />
                   <TechStackItem icon="dart" name="Dart" link="https://dart.dev" />
                   <TechStackItem icon="php" name="PHP" link="https://www.php.net" />
+                  <TechStackItem icon="rust-original" name="Rust" link="https://rust-lang.org/" onlyUseIconName={true} invert={true} />
                   <TechStackItem icon="cplusplus" name="C++" link="https://isocpp.org" />
                   <TechStackItem icon="c" name="C" link="https://en.cppreference.com/w/c" />
                 </div>
@@ -131,6 +134,7 @@ export default function Home() {
                   <TechStackItem icon="react" name="React" link="https://reactjs.org" />
                   <TechStackItem icon="vuejs" name="Vue.js" link="https://vuejs.org" />
                   <TechStackItem icon="spring" name="Spring" link="https://spring.io" />
+                  <TechStackItem icon="fastapi" name="FastAPI" link="https://fastapi.tiangolo.com" />
                   <TechStackItem icon="express-original" name="Express" invert={true}  onlyUseIconName={true} link="https://expressjs.com"/>
                   <TechStackItem icon="nestjs" name="NestJS" link="https://nestjs.com" />
                   <TechStackItem icon="flutter" name="Flutter" link="https://flutter.dev" />

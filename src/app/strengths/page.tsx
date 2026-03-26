@@ -46,7 +46,8 @@ export default function Strengths() {
                                 <StrengthEvaluation icon={"javascript-plain"} iconArgs={"colored"} title={"JavaScript"} percentage={60}/>
                                 <StrengthEvaluation icon={"php-plain"} iconArgs={"colored"} title={"PHP"} percentage={60}/>
                                 <StrengthEvaluation icon={"cplusplus-plain"} iconArgs={"colored"} title={"C++"} percentage={40}/>
-                                <StrengthEvaluation icon={"c-plain"} iconArgs={"colored"} title={"C"} percentage={40}/>
+                                <StrengthEvaluation icon={"c-plain"} iconArgs={"colored"} title={"C"} percentage={30}/>
+                                <StrengthEvaluation icon={"rust-original "} iconArgs={""} title={"Rust"} percentage={30}/>
                             </div>
                         </div>
 
@@ -55,11 +56,12 @@ export default function Strengths() {
                             <h3 className="text-2xl font-bold text-white mb-6">Frameworks & Libraries</h3>
                             <div className="max-w-3xl space-y-4">
                                 <StrengthEvaluation icon={"spring-plain"} iconArgs={"colored"} title={"Spring"} percentage={90}/>
+                                <StrengthEvaluation icon={"fastapi-plain"} iconArgs={"colored"} title={"FastAPI"} percentage={80}/>
+                                <StrengthEvaluation icon={"vuejs-plain"} iconArgs={"colored"} title={"Vue"} percentage={80}/>
                                 <StrengthEvaluation icon={"react-original"} iconArgs={"colored"} title={"React"} percentage={80}/>
-                                <StrengthEvaluation icon={"flutter-plain"} iconArgs={"colored"} title={"Flutter"} percentage={80}/>
-                                <StrengthEvaluation icon={"tailwindcss-plain"} iconArgs={"colored"} title={"Tailwind CSS"} percentage={80}/>
+                                <StrengthEvaluation icon={"flutter-plain"} iconArgs={"colored"} title={"Flutter"} percentage={70}/>
+                                <StrengthEvaluation icon={"tailwindcss-plain"} iconArgs={"colored"} title={"Tailwind CSS"} percentage={70}/>
                                 <StrengthEvaluation icon={"angularjs-plain"} iconArgs={"colored"} title={"Angular"} percentage={70}/>
-                                <StrengthEvaluation icon={"vuejs-plain"} iconArgs={"colored"} title={"Vue"} percentage={70}/>
                                 <StrengthEvaluation icon={"nodejs-plain"} iconArgs={"colored"} title={"Node.js"} percentage={70}/>
                                 <StrengthEvaluation icon={"express-original"} title={"Express"} percentage={70}/>
                                 <StrengthEvaluation icon={"nestjs-plain"} iconArgs={"colored"} title={"NestJS"} percentage={60}/>
@@ -73,7 +75,7 @@ export default function Strengths() {
                             <div className="max-w-3xl space-y-4">
                                 <StrengthEvaluation icon={"docker-plain"} iconArgs={"colored"} title={"Docker"} percentage={90}/>
                                 <StrengthEvaluation icon={"github-original"} iconArgs={"colored"} title={"GitHub"} percentage={90}/>
-                                <StrengthEvaluation icon={"gitlab-plain"} iconArgs={"colored"} title={"GitLab"} percentage={80}/>
+                                <StrengthEvaluation icon={"gitlab-plain"} iconArgs={"colored"} title={"GitLab"} percentage={90}/>
                                 <StrengthEvaluation icon={"apache-plain"} iconArgs={"colored"} title={"Apache"} percentage={80}/>
                                 <StrengthEvaluation icon={"grafana-plain"} iconArgs={"colored"} title={"Grafana"} percentage={70}/>
                                 <StrengthEvaluation icon={"kubernetes-plain"} iconArgs={"colored"} title={"Kubernetes"} percentage={65}/>
@@ -103,12 +105,14 @@ export default function Strengths() {
                         <div>
                             <h3 className="text-2xl font-bold text-white mb-6">IDEs & Tools</h3>
                             <div className="max-w-3xl space-y-4">
-                                <StrengthEvaluation icon={"intellij-plain"} iconArgs={"colored"} title={"IntelliJ"} percentage={95}/>
+                                <StrengthEvaluation title={"IntelliJ / JetBrains"} percentage={95}>
+                                    <img  alt="IntelliJ logo" className="w-8 h-8" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+                                </StrengthEvaluation>
                                 <StrengthEvaluation icon={"vscode-plain"} iconArgs={"colored"} title={"VS Code"} percentage={90}/>
-                                <StrengthEvaluation icon={"visualstudio-plain"} iconArgs={"colored"} title={"Visual Studio"} percentage={65}/>
-                                <StrengthEvaluation title={"Cursor"} percentage={60}>
+                                <StrengthEvaluation title={"Cursor"} percentage={80}>
                                     <img src="/cursor-ai-icon.png" alt="Cursor logo" className="w-8 h-8"/>
                                 </StrengthEvaluation>
+                                <StrengthEvaluation icon={"visualstudio-plain"} iconArgs={"colored"} title={"Visual Studio"} percentage={65}/>
                             </div>
                         </div>
                     </div>
